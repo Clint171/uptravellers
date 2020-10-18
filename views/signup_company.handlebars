@@ -1,0 +1,60 @@
+<center>
+<div class='container'>
+	<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="background-color: rgba(100,100,100,0.7);">
+		<form role="form" method="post" action="/verification_sent" onsubmit="return validateForm()">
+			<p>Welcome to uptravellers. Please input the following details to create an account</p>
+			<p>Already have an account? Sign in <a href="signin">here</a></p>
+			<table>
+				<tr>
+					<th><label for="firstname">Your First name:</label></th>
+					<th><input type="text" name="firstname" placeholder="first name" required autofocus></th>
+				</tr>
+				<tr>	
+					<th><label for="surname">Your Other name(s):</label></th>
+					<th><input type="text" name="surname" placeholder="other name(s)" required></th>
+				</tr>
+				<tr>	
+					<th><label for="email">Your Email Address:</label></th>
+					<th><input type="text" name="email" placeholder="E-mail address" required autocomplete="disabled"></th>
+				</tr>	
+				<tr>
+					<th><label for="phoneno">Your phone Number:</label></th>
+					<th><input type="number" name="phoneno" placeholder="Phone number" required></th>
+				</tr>
+				<tr>
+					<th><label for="company">Your company:</label></th>
+					<th><select name="company" placeholder="Company name" required>
+						<option>...</option>
+						{{{companies}}}
+					</select></th>
+				</tr>
+				</table>
+				<span>Now set a strong password for this account that you will not forget.</span>
+				<table>
+				<tr>
+					<th><label for="password">Your new account password:</label></th>
+					<th><input type="password" name="password" placeholder="New password" required autocomplete="disabled"></th>
+				</tr>				
+				<tr>
+					<th></th>
+					<th><input type="password" placeholder="Re-enter password" required autocomplete="disabled"></th>
+				</tr>
+				<tr>	
+					<th><p>How would you like us to contact you?</p></th>
+				</tr>
+				<tr>	
+					<th><li><label for="contactby_email">By E-mail:</label>
+					<input type="checkbox" name="contactby_email"></li><br></th>
+				</tr>
+				<tr>	
+					<th><li><label for="contactby_sms">By SMS:</label>
+					<input type="checkbox" name="contactby_sms"></li><br></th>			
+				</tr>
+				<tr>	
+					<th><center><input type="submit" value="Create Account" class='btn btn-primary'></center></th>
+				</tr>	
+					</table>
+		</form>
+	</div>
+</div>
+</center>

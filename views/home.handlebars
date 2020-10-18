@@ -1,0 +1,12 @@
+<center>
+<div class="container">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: rgba(100,100,100,0.7);">
+		<h4>Welcome back, {{firstname}}, where would you like to go today?</h4>
+		<form method="post" action="/vehicles">
+			<input type="text" name="destination" placeholder="e.g. 'Mombasa'" required><br><br>
+			<input type="submit" class="btn btn-primary" value="Submit destination">
+			{{{error}}}
+		</form>
+	</div>
+</div>
+</center>

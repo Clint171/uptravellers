@@ -1,0 +1,32 @@
+<center>
+<div class="container">
+	<h2>Please fill in the following vehicle details.</h2>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: rgba(100,100,100,0.7);">
+		<form method="post" action="/vehicle_added">
+				<table>
+				<tr>
+					<th><label for="regno">The vehicle number plate:</label></th>
+					<th><input type="text" name="regno" placeholder="e.g. KBQ928A" required></th>
+				</tr>
+				<tr>	
+					<th><label for="driver">The driver's full names</label></th>
+					<th><input type="text" name="driver" placeholder="driver's name" required></th>
+				</tr>
+				<tr>	
+					<th><label for="destination">The vehicle's destination</label></th>
+					<th><input type="text" name="destination" placeholder="e.g. Mombasa" required></th>
+				</tr>
+				<tr>
+					<th><label for="deptdate">The vehicle departure date</label></th>
+					<th><input type="datetime-local" name="deptdate" placeholder="24-hr system" required></th>
+				</tr>	
+				<tr>
+					<th><label for="no_of_passengers">The vehicle's seat capacity</label></th>
+					<th><input type="number" name="no_of_passengers" placeholder="e.g. 12" required></th>
+				</tr>
+				</table>
+			<input type="submit" value="Add vehicle" class="btn btn-primary">
+		</form>
+	</div>
+</div>
+</center>

@@ -1,0 +1,27 @@
+{
+  "name": "uptravellers",
+  "version": "1.0.0",
+  "description": "travel management system by Clint Simiyu",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Clint Simiyu",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-mongo": "^3.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express3-handlebars": "^0.5.2",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.9",
+    "nodemailer": "^6.4.14"
+  }
+}

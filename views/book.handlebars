@@ -1,0 +1,35 @@
+<center>
+<div class="container">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: rgba(100,100,100,0.7);">
+		<h4>Here's the booking form:</h4>
+<form role="form" method="post" action="/payment" onsubmit="return validateForm()">
+			<table>
+				<tr>
+					<th><label for="seats">How many seats are you booking?</label></th>
+					<th><input type="number" name="seats" placeholder="Maximum: {{max_seats}}" required></th>
+				</tr>
+				<tr>	
+					<th><label for="pay">Would you like to pay now?</label></th>
+					<tr>
+						<th>Yes:<input type="radio" name="pay" value="true" checked></th>
+					</tr>
+					<tr>
+						<th>No:<input type="radio" name="pay" value="false"></th>
+					</tr>
+				</tr>
+				<tr>	
+					<th><label for="payment_method">What is your preferred payment method?</label></th>
+					<th>
+						<select name="payment_method" required>
+							<option>M-pesa</option>
+							<option>Credit/Debit card</option>
+							<option>Cash</option>
+						</select>
+					</th>
+				</tr>	
+			</table>
+			<input type='submit' class="btn btn-primary" value="Book">
+		</form>
+	</div>
+</div>
+</center>
