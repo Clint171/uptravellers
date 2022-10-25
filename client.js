@@ -3,7 +3,7 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const url = "mongodb://localhost:27017";
-const url_net = "mongodb+srv://Clint:clint@mongodb@clintsimiyu.orhmn.mongodb.net/uptravellers?retryWrites=true&w=majority";
+const url_net = "mongodb+srv://Clint:clintatmongodb@cluster0.bkvkbwp.mongodb.net/?retryWrites=true";
 db = mongoose.createConnection(url_net + "/uptravellers");
 //include all required modules
 var express = require("express");
