@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const url = "mongodb://localhost:27017";
 const url_net = "mongodb+srv://Clint:clint@mongodb@clintsimiyu.orhmn.mongodb.net/uptravellers?retryWrites=true&w=majority";
-db = mongoose.createConnection(url + "/uptravellers");
+db = mongoose.createConnection(url_net + "/uptravellers");
 //include all required modules
 var express = require("express");
 var session = require("express-session"); 
