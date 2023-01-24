@@ -8,8 +8,7 @@ db = mongoose.createConnection(url_net + "/uptravellers");
 //include all required modules
 var express = require("express");
 var session = require("express-session"); 
-var hbs = require("express3-handlebars")
-		.create({ defaultLayout : 'main'});
+var mustacheExpress = require("mustache-express");
 var MongoStore = require('connect-mongo')(session);
 //localised modules
 const email_helper = require("./lib/email_helper.js");
@@ -17,7 +16,7 @@ const mongohelper = require("./lib/mongo_helper.js");
 
 //start express app
 var app = express();
-app.engine('handlebars' , hbs.engine);
+app.engine("html", mustacheExpress());
 //other variables
 //use third party software 
 
@@ -50,7 +49,10 @@ app.set("port", process.env.PORT || 3000);
 
 //set app view engine
 
-app.set('view engine' , "handlebars");
+app.set('view engine' , "html");
+
+//set views directory
+app.set('views', __dirname+"/views");
 
 //set 'post' routes and actions
 
