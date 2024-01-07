@@ -15,7 +15,6 @@
     "nodemon": "^2.0.5"
   },
   "dependencies": {
-    "mongoose": "^5.13.15",
     "mustache-express": "^1.3.2",
     "nodemailer": "^6.8.0"
   }
